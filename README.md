@@ -61,6 +61,10 @@ To restore, pass the name of a backup file (no stdin support yet)
 
 
 ## How to
+* Install dependencies
+  ```
+  make depends
+  ```
 * Build
   ```
   make build
