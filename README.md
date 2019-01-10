@@ -13,7 +13,7 @@ USAGE:
    kv-backup [global options] command [command options] [arguments...]
 
 VERSION:
-   0.1
+   1.0
 
 COMMANDS:
    backup	Dump Consul's KV database to a JSON file
@@ -58,3 +58,18 @@ USAGE:
 ```
 
 To restore, pass the name of a backup file (no stdin support yet)
+
+
+## How to
+* Build
+  ```
+  make build
+  ```
+* Running withoud build
+  ```
+  make run
+  ```
+* Running binary after build
+  ```
+  ./bin/kv-backup
+  ```

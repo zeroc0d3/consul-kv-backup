@@ -13,7 +13,8 @@ import (
 	"unicode/utf8"
 
 	"github.com/hashicorp/consul/api"
-	"gopkg.in/urfave/cli.v1" // imports as package "cli"
+	cli "gopkg.in/urfave/cli.v1"
+	// imports as package "cli"
 )
 
 type valueEnc struct {
@@ -31,7 +32,7 @@ func main() {
 	app := cli.NewApp()
 	app.Name = "kv-backup"
 	app.Usage = "Back up Consul's KV store"
-	app.Version = "0.2"
+	app.Version = "1.0"
 	app.Flags = []cli.Flag{
 		cli.StringFlag{
 			Name:   "cacert,r",
